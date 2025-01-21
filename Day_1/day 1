@@ -1,0 +1,16 @@
+from datetime import datetime
+
+name = str(input("Enter your name: "))
+year = int(input("Enter your birthyear: "))
+month = int(input("Enter your birth month: "))
+day = int(input("Enter your birth day: "))
+
+today = datetime.today()
+
+age = today.year - year
+
+if(today.month, today.day) < (month,day):
+  age -=1
+
+print(f"Hello, {name}! Your age is {age}.")
+
